@@ -1,0 +1,25 @@
+<h3>This is the parent component</h3>
+<app-child #childRef [dataFromParent]="valueToChild" (dataFromChild)="AssignValue($event)"></app-child>
+<h4>THis is coming from child to parent - {{valueFromChild}}</h4>
+
+<h4>-----------------------------------------------------------------------------------</h4>
+
+<h2>Here we will fetch the data from api and can show as an dependency injection</h2>
+
+<div (click)="loadDataFromApi()">Load Data</div>
+
+<ng-container *ngFor="let val of loadedData">
+  <p>{{val |json}}</p>
+</ng-container>
+
+<h4>-----------------------------------------------------------------------------------</h4>
+
+<h2>Component interaction using viewChild</h2>
+
+<div style="border: 1px solid black;" (click)="methodToIncrement()">Btn to trigger child method</div>
+
+<h4>-----------------------------------------------------------------------------------</h4>
+
+<h2>Component interaction using services</h2>
+<span>This is parent component in this we'll pass data to other comp</span>
+<div (click)="sendMessage()">SendMessage</div>

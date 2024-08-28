@@ -1,0 +1,9 @@
+
+<div>
+<ng-content></ng-content>
+  <div *ngFor="let val of Data">
+    <span>{{val.name}}</span> -
+    <span>{{val.model}}</span>
+  </div><br>
+<ng-content select=".linkBelow"></ng-content>
+</div>

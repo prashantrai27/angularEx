@@ -1,0 +1,35 @@
+.container {
+  margin: 20px auto;
+  background-color: rgb(67, 142, 240);
+  color: black;
+  display: grid;
+  width: 90%;
+  grid-template-columns: repeat(200px 350px 150px) ;
+  grid-template-rows: repeat(3,150px);
+  grid-gap: 20px;
+  padding: 20px;
+}
+// .main-container {
+//   display: inline;
+// }
+* {
+  margin: 0; padding: 0;
+}
+.box1 {
+  background-color: rgb(169, 220, 240);
+  grid-column: 1/4;
+}
+.box2 {
+  background-color: rgb(169, 220, 240);
+  grid-row: 2/4;
+}
+.box3 {
+  background-color: rgb(169, 220, 240);
+}
+.box4 {
+  background-color: rgb(169, 220, 240);
+}
+.box5 {
+  background-color: rgb(169, 220, 240);
+  grid-column: 2/4;
+}

@@ -1,0 +1,13 @@
+<p>child works!</p>
+<h4>{{dataFromParent}}</h4>
+<br>
+<div (click)="assignVal()">click to send data to parent</div>
+<br>
+<!-- below counter is accessed by parent using viewChild -->
+<h1>Counter : {{counter}}</h1>
+<br>
+<h3>Random message: {{randomMSG}}</h3>
+
+<hr>
+
+<span (click)="sendUsingBehavior()">click this for behavior sub</span>
